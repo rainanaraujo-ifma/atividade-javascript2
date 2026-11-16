@@ -1,0 +1,23 @@
+/* Estilo das páginas das questões. Não precisa mexer aqui. */
+body { font-family: Arial, sans-serif; max-width: 820px; margin: 40px auto; padding: 0 20px; color: #1E2A38; line-height: 1.6; }
+h1.questao { font-size: 1.6rem; }
+.enunciado { background: #F4F6F8; border-radius: 12px; padding: 16px 24px; }
+.enunciado code, .console { font-family: Consolas, monospace; }
+.console { background: #1E2A38; color: #F7F5F0; border-radius: 8px; padding: 12px 16px; white-space: pre; }
+.rotulo { font-size: .8rem; font-weight: bold; color: #6B7280; margin: 24px 0 6px; }
+#area { border: 2px dashed #CBD5E1; border-radius: 12px; padding: 20px 24px; min-height: 60px; }
+details { margin-top: 20px; }
+details img { max-width: 100%; border: 1px solid #E5E7EB; border-radius: 8px; margin-top: 8px; }
+.aviso-js { background: #1E2A38; color: #fff; border-radius: 12px; padding: 14px 24px; margin-top: 24px; }
+nav.questoes a { color: #1F6E2B; }
+
+/* Classes usadas pelas questões */
+.destaque { background: #7E22CE; color: #fff; padding: 2px 12px; border-radius: 999px; display: inline-block; }
+.escondido { display: none; }
+.aviso { font-size: 1.2rem; font-weight: bold; }
+.grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.15); overflow: hidden; }
+.card img { width: 100%; display: block; }
+.card h3, .card p { margin: 8px 16px; }
+.card p { color: #7E22CE; font-weight: bold; margin-bottom: 16px; }
+.etiqueta { display: inline-block; margin: 12px 16px 0; background: #F2C94C; color: #1E2A38; font-size: .8rem; font-weight: bold; padding: 2px 10px; border-radius: 999px; }

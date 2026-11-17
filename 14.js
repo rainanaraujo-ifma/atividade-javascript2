@@ -16,4 +16,28 @@ const produtos = [
   { nome: 'Complementos', preco: 3, img: 'img/fruta.svg', novo: false },
 ];
 
-// escreva o seu código daqui para baixo
+
+function criarCard(produto) {
+  const article = document.createElement("article")
+  article.classList.add("card")
+  const img = document.createElement("img")
+  img.src = produto.img
+  const h3 = document.createElement("h3")
+  h3.textContent = produto.nome
+  const p = document.createElement("p")
+  p.textContent = `R$ ${produto.preco}`
+  article.append(img)
+  article.append(h3)
+  article.append(p)
+  return article
+}
+
+
+const article1 = criarCard(produtos[0])
+const article2 = criarCard(produtos[1])
+const article3 = criarCard(produtos[2])
+
+const cardapio = document.querySelector("#cardapio")
+cardapio.append(article1)
+cardapio.append(article2)
+cardapio.append(article3)

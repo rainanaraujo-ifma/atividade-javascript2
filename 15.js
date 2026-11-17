@@ -18,4 +18,15 @@ function comDesconto(total) {
   return total;
 }
 
-// escreva o seu código daqui para baixo
+function mostrar(texto){
+  const p = document.createElement("p")
+  p.textContent = texto
+  const saida = document.querySelector("#saida")
+  saida.append(p)
+}
+
+mostrar(`Ana paga R$ ${comDesconto(50)}`)
+mostrar(`Bruno paga R$ ${comDesconto(60)}`)
+mostrar(`Carna paga R$ ${comDesconto(50)}`)
+
+

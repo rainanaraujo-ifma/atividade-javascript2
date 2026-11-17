@@ -10,4 +10,5 @@
 // "Ver como a área deve ficar no final".
 // ============================================================
 
-
+const title = document.getelement("nome-loja")
+title.textContent = "AASDA"

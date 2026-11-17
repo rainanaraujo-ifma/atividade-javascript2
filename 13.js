@@ -16,4 +16,45 @@ const produtos = [
   { nome: 'Complementos', preco: 3, img: 'img/fruta.svg' },
 ];
 
-// escreva o seu código daqui para baixo
+const article1 = document.createElement("article")
+article1.classList.add("card")
+const img1 = document.createElement("img")
+img1.src = produtos[0].img
+const h31 = document.createElement("h3")
+h31.textContent = produtos[0].nome
+const p1 = document.createElement("p")
+p1.textContent = produtos[0].preco
+article1.append(img1)
+article1.append(h31)
+article1.append(p1)
+
+
+const article2 = document.createElement("article")
+const img2 = document.createElement("img")
+img2.src = produtos[1].img
+const h32 = document.createElement("h3")
+h32.textContent = produtos[1].nome
+const p2 = document.createElement("p")
+p2.textContent = produtos[1].preco
+article2.classList.add("card")
+article2.append(img2)
+article2.append(h32)
+article2.append(p2)
+
+const article3 = document.createElement("article")
+const img3 = document.createElement("img")
+img3.src = produtos[2].img
+const h33 = document.createElement("h3")
+h33.textContent = produtos[2].nome
+const p3 = document.createElement("p")
+p3.textContent = `R$ ${produtos[2].preco}`
+article3.classList.add("card")
+article3.append(img3)
+article3.append(h33)
+article3.append(p3)
+
+
+const cardapio = document.querySelector("#cardapio")
+cardapio.append(article1)
+cardapio.append(article2)
+cardapio.append(article3)
